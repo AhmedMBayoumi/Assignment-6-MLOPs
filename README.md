@@ -2,6 +2,7 @@
 
 ## Project Overview
 
+
 This repository contains the implementation and debugging of a Machine Learning Continuous Integration (CI) pipeline for the DSAI 406: Machine Learning Engineering for Production course at the School of Computational Sciences and Artificial Intelligence, Zewail City of Science and Technology. The goal of this project was to identify and resolve configuration issues within a GitHub Actions workflow to ensure automated validation and testing of ML models.
 
 ## Identified Issues and Solutions
