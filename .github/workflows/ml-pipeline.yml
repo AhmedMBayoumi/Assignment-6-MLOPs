@@ -2,8 +2,9 @@ name: ML Model CI
 
 on:
   push:
-    branches-ignore:
-      - main
+    branches:
+      - '**'
+
   pull_request:
 
 jobs:
@@ -39,7 +40,7 @@ jobs:
   train:
     needs: validate-and-test
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main' && contains(github.event.head_commit.message, '[run-train]')
+    if: contains(github.event.head_commit.message, '[run-train]')
     steps:
       - name: Checking out
         uses: actions/checkout@v3
